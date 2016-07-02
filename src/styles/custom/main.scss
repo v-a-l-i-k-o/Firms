@@ -1,0 +1,18 @@
+﻿// ===== base styles
+@import '_partials/normalize-sanitize';
+@import '_partials/grid';
+
+// ===== plugins
+@import '_partials/slick-slider';
+@import '_partials/slicknav';
+
+// ===== mixins
+@import '_mixins/main';
+
+// ===== blocks
+@import '_blocks/core';
+@import '_blocks/header';
+@import '_blocks/content';
+@import '_blocks/footer';
+@import '_blocks/media-queries';
+

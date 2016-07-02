@@ -1,0 +1,131 @@
+$s-firms-account-name: 's-firms-account';
+$s-firms-account-x: 303px;
+$s-firms-account-y: 0px;
+$s-firms-account-offset-x: -303px;
+$s-firms-account-offset-y: 0px;
+$s-firms-account-width: 73px;
+$s-firms-account-height: 69px;
+$s-firms-account-total-width: 484px;
+$s-firms-account-total-height: 75px;
+$s-firms-account-image: '../img/sprite/sprite.png';
+$s-firms-account: (303px, 0px, -303px, 0px, 73px, 69px, 484px, 75px, '../img/sprite/sprite.png', 's-firms-account');
+$s-firms-credit-name: 's-firms-credit';
+$s-firms-credit-x: 378px;
+$s-firms-credit-y: 0px;
+$s-firms-credit-offset-x: -378px;
+$s-firms-credit-offset-y: 0px;
+$s-firms-credit-width: 106px;
+$s-firms-credit-height: 70px;
+$s-firms-credit-total-width: 484px;
+$s-firms-credit-total-height: 75px;
+$s-firms-credit-image: '../img/sprite/sprite.png';
+$s-firms-credit: (378px, 0px, -378px, 0px, 106px, 70px, 484px, 75px, '../img/sprite/sprite.png', 's-firms-credit');
+$s-firms-exist-name: 's-firms-exist';
+$s-firms-exist-x: 232px;
+$s-firms-exist-y: 0px;
+$s-firms-exist-offset-x: -232px;
+$s-firms-exist-offset-y: 0px;
+$s-firms-exist-width: 69px;
+$s-firms-exist-height: 75px;
+$s-firms-exist-total-width: 484px;
+$s-firms-exist-total-height: 75px;
+$s-firms-exist-image: '../img/sprite/sprite.png';
+$s-firms-exist: (232px, 0px, -232px, 0px, 69px, 75px, 484px, 75px, '../img/sprite/sprite.png', 's-firms-exist');
+$s-firms-job-name: 's-firms-job';
+$s-firms-job-x: 49px;
+$s-firms-job-y: 0px;
+$s-firms-job-offset-x: -49px;
+$s-firms-job-offset-y: 0px;
+$s-firms-job-width: 57px;
+$s-firms-job-height: 63px;
+$s-firms-job-total-width: 484px;
+$s-firms-job-total-height: 75px;
+$s-firms-job-image: '../img/sprite/sprite.png';
+$s-firms-job: (49px, 0px, -49px, 0px, 57px, 63px, 484px, 75px, '../img/sprite/sprite.png', 's-firms-job');
+$s-ip-exist-name: 's-ip-exist';
+$s-ip-exist-x: 168px;
+$s-ip-exist-y: 0px;
+$s-ip-exist-offset-x: -168px;
+$s-ip-exist-offset-y: 0px;
+$s-ip-exist-width: 62px;
+$s-ip-exist-height: 64px;
+$s-ip-exist-total-width: 484px;
+$s-ip-exist-total-height: 75px;
+$s-ip-exist-image: '../img/sprite/sprite.png';
+$s-ip-exist: (168px, 0px, -168px, 0px, 62px, 64px, 484px, 75px, '../img/sprite/sprite.png', 's-ip-exist');
+$s-ooo-account-name: 's-ooo-account';
+$s-ooo-account-x: 0px;
+$s-ooo-account-y: 0px;
+$s-ooo-account-offset-x: 0px;
+$s-ooo-account-offset-y: 0px;
+$s-ooo-account-width: 47px;
+$s-ooo-account-height: 64px;
+$s-ooo-account-total-width: 484px;
+$s-ooo-account-total-height: 75px;
+$s-ooo-account-image: '../img/sprite/sprite.png';
+$s-ooo-account: (0px, 0px, 0px, 0px, 47px, 64px, 484px, 75px, '../img/sprite/sprite.png', 's-ooo-account');
+$s-phone-name: 's-phone';
+$s-phone-x: 108px;
+$s-phone-y: 0px;
+$s-phone-offset-x: -108px;
+$s-phone-offset-y: 0px;
+$s-phone-width: 58px;
+$s-phone-height: 60px;
+$s-phone-total-width: 484px;
+$s-phone-total-height: 75px;
+$s-phone-image: '../img/sprite/sprite.png';
+$s-phone: (108px, 0px, -108px, 0px, 58px, 60px, 484px, 75px, '../img/sprite/sprite.png', 's-phone');
+
+$spritesheet-width: 484px;
+$spritesheet-height: 75px;
+$spritesheet-image: '../img/sprite/sprite.png';
+$spritesheet-sprites: ($s-firms-account, $s-firms-credit, $s-firms-exist, $s-firms-job, $s-ip-exist, $s-ooo-account, $s-phone, );
+$spritesheet: (484px, 75px, '../img/sprite/sprite.png', $spritesheet-sprites);
+
+/*
+  Для генерации всего спрайта запустить в корне
+  @include sprites($spritesheet-sprites);
+*/
+
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-position($sprite);
+  @include sprite-image($sprite);
+  background-repeat: no-repeat;
+}
+
+@mixin sprite-box($sprite) {
+  display: inline-block;
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+  @include sprite-position($sprite);
+  @include sprite-image($sprite);
+  background-repeat: no-repeat;
+}
+
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite-box($sprite);
+    }
+  }
+}

@@ -1,0 +1,997 @@
+/* ===== MADIA QUERIES FOR RESPONSIVE DESIGN ===== */
+
+/* ----- DESKTOP VERSION ----- */
+
+@media screen and (max-width: 1499px) {
+
+/* SLICK-SLIDER slider__order */
+
+.slick-prev {
+	margin-left: -61rem;
+}
+
+.slick-next {
+  margin-left: 61rem;
+}
+
+}
+
+@media screen and (max-width: 1293px) {
+
+html {
+	font-size: 50%;
+}
+
+/* SLICK-SLIDER slider__order */
+
+.slick-prev {
+	margin-left: -65rem;
+}
+
+.slick-next {
+  margin-left: 65rem;
+}
+
+/* ----- SECTION best-offers ----- */
+
+.offers_for {
+
+	li {
+		background-size: contain;
+	}
+}
+
+.expanded .services-item_card {
+	padding-right: 10px;
+}
+	
+}
+
+@media screen and (max-width: 1100px) {
+
+/* SLICK-SLIDER slider__order */
+
+.slick-prev {
+	margin-left: -60.5rem;
+}
+
+.slick-next {
+  margin-left: 60.5rem;
+}
+	
+}
+
+/* ----- TABLET VERSION ----- */
+
+@media screen and (max-width: 1023px) {
+
+html {
+	font-size: 40%;
+}
+
+/* SLICK-SLIDER slider__order */
+
+.slick-prev {
+	display: none!important;
+}
+
+.slick-next {
+	display: none!important;
+}
+
+/* ----- SECTION best-offers ----- */
+
+.best-offers {
+
+	.container {
+		padding-left: .7rem;
+	}
+}
+
+.expanded .services-item_card {
+	padding-right: 8px;
+}
+	
+}
+
+/* ----- MOBILE VERSION ----- */
+
+@media screen and (max-width: 799px) {
+
+html {
+	font-size: 62.5%;
+}
+
+/* ===== CORE ===== */
+
+.container {
+	width: 100%;
+	padding: 0 1rem;
+}
+
+.title__h2 {
+	font-size:  2.4em;
+	margin-bottom: 3rem;
+}
+
+button.btn {
+	border: none;
+	color: #404040;
+	padding: 1rem 0;
+	font-weight: 700;
+	text-transform: uppercase;
+	background-color: #4bcaff;
+	transition: background-color 300ms ease;
+	text-shadow: 0 0.1rem 0 rgba(255, 255, 255, 0.3);
+
+	&:hover {
+		background-color: #7dd8ff;
+	}
+}
+
+a.btn {
+	font-size: 2em;
+}
+
+/* ===== HEADER ===== */
+
+header {
+	z-index: 3;
+	position: fixed;
+	padding: .3rem 0;
+	background-color: rgba(0, 0, 0, .6);
+}
+
+.navbar-brand {
+	top: 0;
+	width: 10rem;
+
+	.logo {
+		font-size: 1.6em;
+		line-height: 2rem;
+	}
+}
+
+.js .menu {
+  display:none;
+}
+
+.js .slicknav_menu {
+  display: inline-block;
+}
+
+.navbar-phone {
+	display: none;
+}
+
+/* ===== CONTENT ===== */
+
+/* ----- SECTION slider-board ----- */
+
+.slider-board {
+	border-bottom: .3rem solid #4bcaff;
+}
+
+/* ----- SECTION best-offers ----- */
+
+.best-offers {
+	padding-top: 2rem;
+}
+
+.offers {
+	margin: 0;
+	text-align: center;
+}
+
+.offers_item {
+	width: 28rem;
+	vertical-align: top;
+	display: inline-block;
+
+	& + .offers_item {
+		margin-top: 0;
+		margin-bottom: 1.5rem;
+	}
+}
+
+.offers_item-wrap {
+	width:   100%;
+	height: 42rem;
+}
+
+.offers_title {
+	font-size: 2em;
+	padding-top: 1rem;
+}
+
+.offers_account {
+	font-size: 1.2em;
+}
+
+.offers_registration {
+	font-size: 1.2em;
+	margin-bottom: .8rem;
+}
+
+.offers_money {
+	font-size: 2em;
+	padding: 1rem 0;
+}
+
+.offers_for {
+	padding-left: 5rem;
+
+	li {
+		padding-left: 3rem;
+		background-size: auto 90%;
+	}
+}
+
+.btn__order {
+	padding: 1rem 0;
+}
+
+/* ----- SECTION advantages ----- */
+
+.advantages {
+	text-align: center;
+	padding: 2rem 0 2rem;
+}
+
+.advantages_item {
+	width: 25rem;
+	display: inline-block;
+
+	& + .advantages_item {
+		margin-top: 0;
+		margin-bottom: 2rem;
+	}
+}
+
+.advantages_brand {
+	margin: 0 auto 1.5rem;
+}
+
+.advantages_txt {
+	font-size: 1.4em;
+}
+
+/* ----- SECTION services ----- */
+
+.services {
+	padding-top: 2rem;
+}
+
+.services-items {
+	width: 58rem;
+	margin: 0 auto;
+}
+
+.services-item-wrap {
+	float: none;
+	width: 28.8rem;
+	margin: 0 auto 7rem;
+	display: inline-block;
+}
+
+.expanded .services-item_card {
+	float: left;
+	width: 26.8rem;
+	padding-right: 0;
+
+	.services_brand {
+		transform: translate3d(-50%, -116%, 0);
+	}
+}
+
+.services_title {
+	font-size: 2.2em;
+	min-height: 8rem;
+}
+
+.services-item-txt {
+	width: 100%;
+	float: none;
+	display: none;
+	padding: 1rem 1rem 1rem 29rem;
+
+	p {
+		font-size: 1.2em;
+		font-weight: 400;
+		line-height: 1.6rem;
+		color: rgb(64, 64, 64);
+	}
+}
+
+/* ----- SECTION order -----*/
+
+.order {
+	padding-top:    2rem;
+	padding-bottom: 3rem;
+}
+
+.title__white {
+	margin-bottom: 2rem;
+}
+
+.form__order {
+	width: 46rem;
+	margin: 0 auto;
+
+	.form-item:first-child {
+		width: 100%;
+		padding: 1rem;
+
+		.form-group {
+			width: 100%;
+		}
+	}
+
+	.form-item {
+		float: none;
+		width: 100%;
+		padding: 1rem;
+	}
+
+	label {
+		font-size: 2em;
+	}
+
+	.form-control {
+		height: 3.5rem;
+		font-size: 1.6em;
+	}
+
+	textarea.form-control {
+		height: 12rem;
+	}
+}
+
+.btn__order-submit {
+	width: 25rem;
+	height: 5rem;
+	font-size: 2em;
+	margin-top: 2rem;
+}
+
+/* ----- SECTION reviews -----*/
+
+.reviews {
+	padding-top: 2rem;
+	min-height: 35rem;
+}
+
+.slider__reviews {
+	width: 100%;
+}
+
+.reviews_avatar {
+	float: left;
+	width:  10rem;
+	height: 10rem;
+}
+
+.reviews_txt {
+	float: right;
+	width: 20rem;
+	font-size: 1.2em;
+	padding: 1rem 0 1rem;
+}
+
+/* ----- SECTION contacts -----*/
+
+.contacts {
+	padding: 4rem 0;
+	text-align: center;
+	background-color: #404040;
+}
+
+.contacts-box_phone {
+	display: block;
+	font-size:   2em;
+}
+
+.contacts-box_adress {
+	font-size: 1.4em;
+
+	span {
+		display: block;
+	}
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+	padding: 1.5rem 0;
+}
+
+.copyright {
+	font-size: 1em;
+}
+
+/* SLICK-SLIDER slider__order */
+
+.slider__order {
+	margin: 0;
+	width: 100%;
+
+	.slide-wrap {
+		width: 100%;
+		left: 0; top: 4.6rem;
+		transform: translate3d(0, 0, 0);
+	}
+
+	.slide {
+		height: 40rem;
+		background-size: cover;
+	}
+}
+
+.slide_info {
+	float: none;
+	width: 36rem;
+	margin: 0 auto;
+}
+
+.slide_title {
+	display: block;
+	font-size: 1.4em;
+	text-align: center;
+	padding: .5rem 2rem;
+	text-transform: uppercase;
+}
+
+.slide_form {
+	float: none;
+	width: 36rem;
+	margin: 1rem auto 0;
+	padding: 3rem 2rem;
+}
+
+.form__send-request {
+
+	.form-control {
+		height: 3.5rem;
+		font-size: 1.4em;
+	}
+
+	.form-group {
+
+		& + .form-group {
+			margin-top: 1.5rem;
+		}
+	}
+}
+
+.btn__send-request {
+	width: 100%;
+	font-size: 1.6em;
+	margin-top: 1rem;
+}
+	
+.slick-next, .slick-prev {
+  display: none;
+}
+
+/* SLICK-SLIDER slider__reviews */
+
+.slider__reviews {
+	width: 40rem;
+}
+
+.reviews {
+	position: relative;
+
+	.slick-dots {
+	  bottom: 8rem;
+
+	  li {
+
+	    button {
+	    	width:   4rem;
+	    	height: .6rem;
+			}
+		}
+
+		li.slick-active button {
+			width:   4rem;
+	    height: .6rem;
+		}
+	}
+}
+
+.reviews_avatar {
+	width:  13rem;
+	height: 13rem;
+}
+
+/* MODALS */
+
+/* ----- modal__thanks ----- */
+
+.modal__thanks {
+	width:  25rem;
+	height: 17rem;
+
+	.modal-body {
+		height: 17rem;
+
+		img {
+			width:  12rem;
+			height: 13rem;
+		}
+
+		p {
+			width: 50%;
+			font-size: 1.6em;
+			top: 2rem; left: 3rem;
+		}
+	}
+}
+
+/* ----- modal__send-request ----- */
+
+.modal__leave-request {
+	width:  28rem;
+	height: 27rem;
+
+	.modal-body {
+		padding: 2rem 2rem;
+
+		p {
+			font-size: 1.6em;
+			margin-bottom: 2rem;
+		}
+	}
+
+	.form__send-request {
+		width: 100%;
+	}
+}
+	
+}
+
+@media screen and (max-width: 599px) {
+
+html {
+	font-size: 62.5%;
+}
+
+/* ===== CORE ===== */
+
+.container {
+	width: 100%;
+	padding: 0 1rem;
+}
+
+.title__h2 {
+	font-size:  2em;
+	margin-bottom: 3rem;
+}
+
+button.btn {
+	border: none;
+	color: #404040;
+	padding: 1rem 0;
+	font-weight: 700;
+	text-transform: uppercase;
+	background-color: #4bcaff;
+	transition: background-color 300ms ease;
+	text-shadow: 0 0.1rem 0 rgba(255, 255, 255, 0.3);
+
+	&:hover {
+		background-color: #7dd8ff;
+	}
+}
+
+a.btn {
+	font-size: 2em;
+}
+
+/* ===== CONTENT ===== */
+
+/* ----- SECTION slider-board ----- */
+
+.slider-board {
+	border-bottom: .3rem solid #4bcaff;
+}
+
+/* ----- SECTION best-offers ----- */
+
+.best-offers {
+	padding-top: 2rem;
+}
+
+.offers {
+	margin: 0;
+	text-align: center;
+}
+
+.offers_item {
+	width: 32rem;
+	display: inline-block;
+
+	& + .offers_item {
+		margin-bottom: 0;
+		margin-top: 1.5rem;
+	}
+}
+
+.offers_item-wrap {
+	width:   100%;
+	height: 45rem;
+}
+
+.offers_title {
+	font-size: 2em;
+	padding-top: 2rem;
+}
+
+.offers_account {
+	font-size: 1.2em;
+}
+
+.offers_registration {
+	font-size: 1.2em;
+	margin-bottom: 1.6rem;
+}
+
+.offers_money {
+	font-size: 2em;
+	padding: 1rem 0;
+}
+
+.offers_for {
+	padding-left: 5rem;
+
+	li {
+		padding-left: 3rem;
+		background-size: auto 90%;
+	}
+}
+
+.btn__order {
+	padding: 1rem 0;
+}
+
+/* ----- SECTION advantages ----- */
+
+.advantages {
+	text-align: center;
+	padding: 2rem 0 2rem;
+}
+
+.advantages_item {
+	width: 25rem;
+	display: inline-block;
+
+	& + .advantages_item {
+		margin-top: 2rem;
+		margin-bottom: 0;
+	}
+}
+
+.advantages_brand {
+	margin: 0 auto 1.5rem;
+}
+
+.advantages_txt {
+	font-size: 1.4em;
+}
+
+/* ----- SECTION services ----- */
+
+.services {
+	padding-top: 2rem;
+}
+
+.services-items {
+	width: 100%;
+}
+
+.services-item-wrap {
+	float: none;
+	width: 32rem;
+	display: block;
+	margin: 0 auto 7rem;
+}
+
+.services_title {
+	font-size: 2.2em;
+	min-height: 8rem;
+}
+
+.services_txt {
+	font-size: 1.6em;
+	margin-bottom: 3rem;
+}
+
+.expanded .services-item_card {
+	float: none;
+	width: 29.8rem;
+	margin: 0 auto;
+}
+
+.services-item-txt {
+	display: none;
+	padding: 1rem;
+
+	p {
+		font-size: 1.2em;
+		font-weight: 400;
+		line-height: 1.6rem;
+		color: rgb(64, 64, 64);
+	}
+}
+
+/* ----- SECTION order -----*/
+
+.order {
+	padding-top:    2rem;
+	padding-bottom: 3rem;
+}
+
+.title__white {
+	margin-bottom: 2rem;
+}
+
+.form__order {
+
+	.form-item {
+		float: none;
+		width: 100%;
+		padding: 1rem;
+	}
+
+	label {
+		font-size: 2em;
+	}
+
+	.form-control {
+		height: 3.5rem;
+		font-size: 1.6em;
+	}
+
+	textarea.form-control {
+		height: 12rem;
+	}
+}
+
+.btn__order-submit {
+	width: 25rem;
+	height: 5rem;
+	font-size: 2em;
+	margin-top: 2rem;
+}
+
+/* ----- SECTION reviews -----*/
+
+.reviews {
+	padding-top: 2rem;
+	min-height: 35rem;
+}
+
+.slider__reviews {
+	width: 100%;
+}
+
+.reviews_avatar {
+	float: left;
+	width:  10rem;
+	height: 10rem;
+}
+
+.reviews_txt {
+	float: right;
+	width: 20rem;
+	font-size: 1.2em;
+	padding: 1rem 0 1rem;
+}
+
+/* ----- SECTION contacts -----*/
+
+.contacts {
+	padding: 4rem 0;
+	text-align: center;
+	background-color: #404040;
+}
+
+.contacts-box_phone {
+	display: block;
+	font-size:   2em;
+}
+
+.contacts-box_adress {
+	font-size: 1.4em;
+
+	span {
+		display: block;
+	}
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+	padding: 1.5rem 0;
+}
+
+.copyright {
+	font-size: 1em;
+}
+
+/* SLICK-SLIDER slider__order */
+
+.slider__order {
+	margin: 0;
+	width: 100%;
+
+	.slide-wrap {
+		width: 100%;
+		left: 0; top: 4.6rem;
+		transform: translate3d(0, 0, 0);
+	}
+
+	.slide {
+		height: 35rem;
+		background-size: cover;
+	}
+}
+
+.slide_info {
+	width: 25.5rem;
+	float: none;
+	margin: 0 auto;
+}
+
+.slide_title {
+	display: block;
+	font-size: 1.2em;
+	text-align: center;
+	padding: .5rem 2rem;
+	text-transform: uppercase;
+}
+
+.slide_form {
+	float: none;
+	width: 25.5rem;
+	margin: 1rem auto 0;
+	padding: 1.5rem 2rem;
+}
+
+.form__send-request {
+
+	.form-control {
+		height: 3.5rem;
+		font-size: 1.4em;
+	}
+
+	.form-group {
+
+		& + .form-group {
+			margin-top: 1rem;
+		}
+	}
+}
+
+.btn__send-request {
+	width: 100%;
+	font-size: 1.6em;
+	margin-top: 1rem;
+}
+	
+.slick-next, .slick-prev {
+  display: none;
+}
+
+/* SLICK-SLIDER slider__reviews */
+
+.slider__reviews {
+	width: 34rem;
+}
+
+.reviews {
+	position: relative;
+
+	.slick-dots {
+	  bottom: 8rem;
+
+	  li {
+
+	    button {
+	    	width:   4rem;
+	    	height: .6rem;
+			}
+		}
+
+		li.slick-active button {
+			width:   4rem;
+	    height: .6rem;
+		}
+	}
+}
+
+/* MODALS */
+
+/* ----- modal__thanks ----- */
+
+.modal__thanks {
+	width:  25rem;
+	height: 17rem;
+
+	.modal-body {
+		height: 17rem;
+
+		img {
+			width:  12rem;
+			height: 13rem;
+		}
+
+		p {
+			width: 50%;
+			font-size: 1.6em;
+			top: 2rem; left: 3rem;
+		}
+	}
+}
+
+/* ----- modal__send-request ----- */
+
+.modal__leave-request {
+	width:  28rem;
+	height: 27rem;
+
+	.modal-body {
+		padding: 2rem 2rem;
+
+		p {
+			font-size: 1.6em;
+			margin-bottom: 2rem;
+		}
+	}
+
+	.form__send-request {
+		width: 100%;
+	}
+}
+	
+}
+
+@media screen and (max-width: 480px) {
+
+/* ----- SECTION order -----*/
+
+.form__order {
+	width: 100%;
+}
+
+}
+
+@media screen and (max-width: 359px) {
+
+/* ----- SECTION best-offers ----- */
+
+.offers_item {
+	width: 100%;
+}
+
+/* ----- SECTION services ----- */
+
+.services-item-wrap {
+	width: 100%;
+}
+
+.expanded .services-item_card {
+	width: 27.8rem;
+}
+
+.slider__reviews {
+	width: 100%;
+}
+
+.reviews_avatar {
+	width:  8rem;
+	height: 8rem;
+}
+	
+}
+	
